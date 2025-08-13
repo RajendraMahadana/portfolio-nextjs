@@ -72,7 +72,7 @@ export default function Portofolio() {
 
                 <div>
                 <Link href="/portofolio/contact">
-                    <button className="px-8 py-3 bg-gray-800 rounded-lg font-montserrat tex-xl text-white">Contact Me</button>
+                    <button className="px-8 py-3 cursor-pointer bg-gray-800 rounded-lg font-montserrat tex-xl text-white">Contact Me</button>
                 </Link>
                 </div>
 
