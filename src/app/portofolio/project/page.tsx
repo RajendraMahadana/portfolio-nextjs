@@ -1,4 +1,5 @@
 // app/projects/page.tsx
+import Footer from "@/app/components/Footer";
 import Image from "next/image";
 
 interface Project {
@@ -36,7 +37,8 @@ const projects: Project[] = [
 
 export default function Project() {
   return (
-    <section className="min-h-[100vh] flex justify-center flex-col px-4 md:px-12 py-10 bg-white">
+    <>
+    <section className="min-h-[100vh] flex justify-center flex-col px-4 md:px-12 py-10 ">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-montserrat font-semibold mb-8 text-center md:text-left">
         My Projects
       </h1>
@@ -86,5 +88,10 @@ export default function Project() {
         ))}
       </div>
     </section>
+
+    <section>
+            <Footer></Footer>
+        </section>
+    </>
   );
 }

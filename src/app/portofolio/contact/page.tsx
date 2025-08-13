@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import Footer from '@/app/components/Footer';
 
 export default function ContactPage() {
   const [name, setName] = useState('');
@@ -15,6 +16,7 @@ export default function ContactPage() {
   };
 
   return (
+    <>
     <section className="min-h-screen flex flex-col justify-center items-center text-gray-900 px-6 py-20">
       <div className="flex flex-col lg:flex-row gap-12 w-full max-w-6xl">
         
@@ -43,14 +45,14 @@ export default function ContactPage() {
             <div className="flex items-center gap-3">
               <Phone size={20} className="text-blue-600" />
               <p className="text-gray-500 text-sm md:text-base">
-                +62 812-3456-7890
+                +62 858 1343 0008
               </p>
             </div>
 
             <div className="flex items-center gap-3">
               <MapPin size={20} className="text-blue-600" />
               <p className="text-gray-500 text-sm md:text-base">
-                Jakarta, Indonesia
+                Depok, Indonesia
               </p>
             </div>
           </div>
@@ -88,5 +90,10 @@ export default function ContactPage() {
         </div>
       </div>
     </section>
+
+    <section>
+                <Footer></Footer>
+            </section>
+            </>
   );
 }

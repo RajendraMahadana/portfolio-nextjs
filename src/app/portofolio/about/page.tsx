@@ -1,3 +1,4 @@
+import Footer from "@/app/components/Footer";
 import { Code, Database, Palette } from "lucide-react";
 import { JSX } from "react";
 
@@ -33,8 +34,8 @@ const skillsData: SkillCategory[] = [
 export default function About() {
     return (
         <>
-        <section className="min-h-[80vh] flex flex-col justify-end">
-           <div className="w-[100vw] flex mb-10 flex-col items-center pt-28 px-4">
+        <section className="min-h-[100vh] flex flex-col justify-center">
+           <div className="w-[100vw] flex mb-10 flex-col items-center pt-20 px-4">
   <div className="w-full md:w-1/2 text-center">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat mb-4">
       About Me
@@ -84,6 +85,10 @@ export default function About() {
 
     </div>
         </section>
+
+        <section>
+                    <Footer></Footer>
+                </section>
         </>
     )
 }

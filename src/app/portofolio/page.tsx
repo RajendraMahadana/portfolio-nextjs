@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useEffect, useRef } from "react"
 import Typed from "typed.js";
 import Skill from "../components/Skill";
+import Footer from "../components/Footer";
 
 export default function Portofolio() {
     const el = useRef<HTMLSpanElement>(null);
@@ -94,6 +95,10 @@ export default function Portofolio() {
 
         <section>
             <Skill></Skill>
+        </section>
+
+        <section>
+            <Footer></Footer>
         </section>
         </>
     )
